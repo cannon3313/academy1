@@ -82,4 +82,24 @@ pilot = Pilot("Jeffrey", 35)
 pilot.show_info()
 
 
+class Sailor(Human):
+    def __init__(self, name, age):
+        super().__init__(name, age)
 
+    def show_info(self):
+        super().show_info()
+        print("Atlantic Ocean so amazing!")
+
+sailor = Sailor("Padre", 23)
+sailor.show_info()
+
+class Builder(Human):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def show_info(self):
+        super().show_info()
+        print("I think this building be very beautiful")
+
+builder = Builder("Raymond", 46)
+sailor.show_info()
